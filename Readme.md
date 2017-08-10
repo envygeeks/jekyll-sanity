@@ -1,8 +1,8 @@
 [1]: https://travis-ci.org/envygeeks/jekyll-sanity
 
-<div style="text-align:center" markdown="true">
-  <a href="https://goo.gl/BhrgjW">
-    <img src="https://envygeeks.io/badges/paypal-large_1.png" alt="Donate">
+<p align=center>
+  <a href=https://goo.gl/BhrgjW>
+    <img src=https://envygeeks.io/badges/paypal-large_1.png alt=Donate>
   </a>
 </div>
 
