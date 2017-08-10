@@ -1,8 +1,9 @@
 [1]: https://travis-ci.org/envygeeks/jekyll-sanity
-[2]: https://goo.gl/BhrgjW
 
 <div style="text-align:center" markdown="true">
-  [![Donate](https://envygeeks.io/badges/paypal-large_1.png)][2]
+  <a href="https://goo.gl/BhrgjW">
+    <img src="https://envygeeks.io/badges/paypal-large_1.png" alt="Donate">
+  </a>
 </div>
 
 # Jekyll Sanity [![Status](https://travis-ci.org/envygeeks/jekyll-sanity.svg?branch=master)][1]
