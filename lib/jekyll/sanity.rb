@@ -35,7 +35,7 @@ module Jekyll
   #   site instance at all, Jekyll is weird.
   # --
   def self.reload_config
-    @config = nil || config
+    instance_variable_set(:@config, nil); config
   end
 
   # --
@@ -71,7 +71,8 @@ module Jekyll
   # --
   def self.source_dir
     @source_dir ||= begin
-      Pathutil.new(config.fetch("source"))
+      Pathutil.new(config.fetch("source")). \
+        expand_path
     end
   end
 
@@ -82,7 +83,8 @@ module Jekyll
   # --
   def self.plugins_dir
     @plugins_dir ||= begin
-      Pathutil.new(config.fetch("plugins_dir"))
+      Pathutil.new(config.fetch("plugins_dir")). \
+        expand_path
     end
   end
 
@@ -107,7 +109,8 @@ module Jekyll
   # --
   def self.site_dir
     @site_dir ||= begin
-      Pathutil.new(config.fetch("destination"))
+      Pathutil.new(config.fetch("destination")). \
+        expand_path
     end
   end
 end
