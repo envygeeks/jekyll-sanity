@@ -9,11 +9,23 @@ module Jekyll
   # --
   def self.config
     @config ||= begin
+      oldo, olde = $stdout, $stderr
+      $stdout, $stderr = StringIO.new, StringIO.new
       file = Pathutil.pwd.join("_config.yml")
-      Jekyll.configuration(file.read_yaml({
-        safe: true
-      }))
+      config = file.read_yaml(safe: true)
+      source = config["source"]
+      defs = {
+        "source" => Pathutil.pwd.to_s
+      }
+
+      config = config.merge(defs)
+      configuration(config).update({
+        "source" => source || Configuration::DEFAULTS["source"]
+      })
     end
+  ensure
+    $stdout = oldo
+    $stderr = olde
   end
 
 
