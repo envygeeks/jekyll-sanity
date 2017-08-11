@@ -24,8 +24,8 @@ module Jekyll
       })
     end
   ensure
-    $stdout = oldo
-    $stderr = olde
+    $stdout = oldo if oldo
+    $stderr = olde if olde
   end
 
 
