@@ -16,10 +16,9 @@ Gem::Specification.new do |spec|
   spec.email = ["jordon@envygeeks.io"]
   spec.require_paths = ["lib"]
   spec.name = "jekyll-sanity"
-  spec.has_rdoc = false
   spec.license = "MIT"
 
   spec.add_development_dependency("rspec", ">= 3", "< 4")
   spec.add_development_dependency("luna-rspec-formatters", "~> 3.7")
-  spec.add_runtime_dependency("jekyll", "~> 3.1")
+  spec.add_runtime_dependency("jekyll", ">= 3.1", "< 5.0")
 end
