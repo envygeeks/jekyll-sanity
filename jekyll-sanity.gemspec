@@ -19,11 +19,11 @@ Gem::Specification.new do |spec|
   spec.name = 'jekyll-sanity'
   spec.license = 'MIT'
 
-  spec.add_development_dependency('pry', '> 0')
-  spec.add_development_dependency('rake', '> 0')
+  spec.add_development_dependency('rake', '>= 1', '< 99')
   spec.add_development_dependency('rspec', '>= 3', '< 4')
   spec.add_development_dependency('envygeeks-rubocop', '= 1.0.0')
   spec.add_development_dependency('luna-rspec-formatters', '~> 3.16')
+  spec.add_development_dependency('pry', '>= 0.1', '< 0.99')
   spec.add_runtime_dependency('jekyll', '>= 3.1', '< 5.0')
   spec.add_runtime_dependency('pathutil', '~> 0.16')
 end
