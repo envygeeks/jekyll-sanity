@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/envygeeks/jekyll-sanity.svg?branch=master)](https://travis-ci.org/envygeeks/jekyll-sanity)
 
-# Jekyll Sanity
+# jekyll-sanity
 
 Provides surface patches for Jekyll that provide useful methods for plugin
 authors, and site authors as well.  Moves some insane instance methods to

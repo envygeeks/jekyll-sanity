@@ -1,5 +1,5 @@
 # Frozen-string-literal: true
-# Copyright: 2017 - 2018 - MIT License
+# Copyright: 2017 - 2020 - ISC License
 # Author: Jordon Bedwell
 # Encoding: utf-8
 
@@ -15,6 +15,9 @@ module Jekyll
   # @return [Hash] the config.
   #
   def self.config
+    old_e = nil
+    old_o = nil
+
     @config ||= begin
       old_o, old_e = $stdout, $stderr
       $stdout, $stderr = StringIO.new, StringIO.new
@@ -36,7 +39,6 @@ module Jekyll
     $stdout = old_o if old_o
     $stderr = old_e if old_e
   end
-
 
   #
   # Reloads the configuration file for you, this only
