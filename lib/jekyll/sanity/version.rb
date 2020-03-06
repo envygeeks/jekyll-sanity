@@ -5,6 +5,6 @@
 
 module Jekyll
   module Sanity
-    VERSION = '1.4.0'
+    VERSION = '1.6.0'
   end
 end
